@@ -1,0 +1,252 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+.header_title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, #E3360C 0%, #f16731 100%);
+  color: white;
+  margin-top: -0.3rem;
+}
+
+.logo {
+  width: 50px;
+  fill: white;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.inner-header {
+  height: 250px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.gradient-custom-2 {
+  border-width: 0;
+  border-radius: 10px;
+  padding: 0.6rem 9rem 0.6rem 9rem;
+  color: white;
+  margin-left: 10px;
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh;
+
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+.login {
+  width: 400px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.input:focus~.pocket,
+.input:not(:placeholder-shown)~.pocket {
+  transform: translateY(8px);
+}
+
+.headerrr {
+  background-color: #262531;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .headerrr {
+    background-color: #262531;
+    font-weight: bold;
+    color: white;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+
+  }
+}
+
+.logooo {
+
+  font-size: 3rem;
+  font-family: 'Rosmatika', sans-serif;
+  font-weight: 400;
+  font-size: xxx-large;
+  margin: 0 auto;
+
+}
+
+@media only screen and (max-width: 500px) {
+  .logooo {
+
+    font-size: 3rem;
+    font-family: 'Rosmatika', sans-serif;
+    font-weight: 400;
+    font-size: xxx-large;
+  }
+}
+
+.nav {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  font-weight: 400;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.nav li {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav li {
+    margin-left: 2rem;
+  }
+}
+
+.register {
+  border-style: solid;
+  border-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 5;
+}
+
+.ballance {
+  height: 10rem;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="http://fonts.cdnfonts.com/css/rosmatika" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/login.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy</title>
+  </head>
+  <body>
+    <div class="headerrr" >
+      <div contenteditable class="logooo">
+        <span style="color: #F57C00">A</span>na<span style="color: #F57C00">S</span>hoP
+      </div>
+      
+    </div>
+
+
+    <div style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); margin: 0.3rem 0 0.6rem 0;">
+      <ul class="nav">
+        <li style="margin-left: 0px;"><a href="/"  style="color: white">Home</a></li>
+        <li><a href="/buy" style="text-decoration:underline ; text-decoration-color: white; text-decoration-thickness: 10%;text-underline-offset: 3px;text-un">Buy</a></li>
+        <li><a href="/sell"  style="text-decoration:underline ; text-decoration-color: white; text-decoration-thickness: 10%;text-underline-offset: 3px;text-un">Sell</a></li>
+        <li><a href="/ballance"  style="color: white">Balance</a></li>
+        <li><a href="/logout" class="register" style="color: white">Logout</a></li>
+      </ul>
+    </div>
+    <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+    <div class="header">
+      <!--Content before waves-->
+      <div class="inner-header flex">
+        <!--Just the logo.. Don't mind this-->
+        
+        <h1 class="header_title">Buy</h1>
+      </div>
+
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </div>
+    <div style="text-align: center; margin-top: 5rem;">
+      <form action="/buy" method="post">
+        <div class="mb-3">
+            <select name = "product" class="select" style="width:20rem;height: 2rem;" required>
+                <option disable selected >Product</option>
+                <option >MacBook Air with M1 chip</option>
+                <option >MacBook Pro 14-inch</option>
+                <option >iMac 24-inch</option>
+                <option >Studio Display</option>
+                <option >iPhone 14 Pro</option>
+                <option >iPhone 14 Pro Max</option>
+                <option >iPhone 13 Pro</option>
+                <option >iPhone 13 Pro Max</option>
+  
+            </select>
+        </div>
+        <button class="btn btn-primary gradient-custom-2" type="submit">Buy</button>
+      </form>
+    </div>
+
+    
+  
+    
+  </body>
+</html>

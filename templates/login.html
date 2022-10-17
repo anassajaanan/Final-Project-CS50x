@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="http://fonts.cdnfonts.com/css/rosmatika" rel="stylesheet">
+                
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/login.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <!--Hey! This is the original version
+of Simple CSS Waves-->
+    <div style="background: linear-gradient(60deg, #E3360C 0%, #f16731 100%); margin: 0.2rem 0 0 0;">
+      <h1 class="header_title" style="color: white; text-align: center; font-family: 'Rosmatika', sans-serif;">AnaShop</h1>
+    </div>
+    <div class="header">
+      <div class="inner-header flex">
+        <!--Just the logo.. Don't mind this-->
+        
+        <h1 class="header_title">Login</h1>
+      </div>
+
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </div>
+    <!--Header ends-->
+    <div class="login">
+      <form action="/login" method="post">
+        <p style="color: rgb(95, 99, 102); font-weight: 400; font-size: 1.3rem">
+          Please login to your account
+        </p>
+
+        <div
+          class="form-outline mb-4"
+          style="border: solid; border-radius: 10px; border-width: 1px"
+        >
+          <input
+            type="text"
+            id="form2Example11"
+            class="form-control"
+            name="username"
+          />
+          <label class="form-label" for="form2Example22" style="margin-top: -0.8rem;color: #dd3675;">username</label>
+        </div>
+
+        <div
+          class="form-outline mb-4"
+          style="border: solid; border-radius: 10px; border-width: 1px"
+        >
+          <input type="password" id="form2Example22" class="form-control" name="password" />
+          <label class="form-label" for="form2Example22" style="margin-top: -0.7rem;color: #dd3675;">Password</label>
+        </div>
+
+        <div class="text-center pt-1 mb-5 pb-1">
+          <button class="btn btn-primary gradient-custom-2" type="submit">Login</button>
+          
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center pb-4">
+          <p class="mb-0 me-2" style="font-weight: 400">
+            Don't have an account?
+          </p>
+          <a href="/register"
+            class="fw-bold text-body" style="font-size:large;"><u>Create new</u></a>
+
+        </div>
+      </form>
+    </div>
+
+    <!--Content starts-->
+    <div class="content flex">
+      <footer class="row">
+        <div class="col d-flex justify-content-center flex-row pt-5" >
+          <a href="https://pt-br.facebook.com/"><i class="fab fa-facebook" style="color: #2949c7;"></i></a>&nbsp&nbsp
+          <a href="https://twitter.com/"><i class="fab fa-twitter" style="color: #0280ff;"></a></i>&nbsp&nbsp
+          <a href="https://www.instagram.com/anas__ajaanan/" target="_blank"><i class="fab fa-instagram" style="color: #dd3675;"></a></i>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <p style="font-weight: bold;font-size:medium">&copy; Copyright Anas Ajaanan. All rights reserved.</p>
+        </div>
+      </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/9b452e5ad1.js" crossorigin="anonymous"></script>
+    </div>
+    <!--Content ends-->
+  </body>
+</html>
